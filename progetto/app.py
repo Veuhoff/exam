@@ -43,7 +43,7 @@ credentials={
   "universe_domain": "googleapis.com"
 }
 # Inizializza Firestore
-db = firestore.Client.from_service_account_json(
+db = firestore.Client.from_service_account_info(
     #r"firestore1\\credentials.json",
     credentials,
     database='smartpark'
